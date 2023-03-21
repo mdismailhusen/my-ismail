@@ -1,0 +1,62 @@
+@media screen and (min-width:580px) {
+    .col-tb-1 {width: 8.33%;}
+    .col-tb-2 {width: 16.66%;}
+    .col-tb-3 {width: 25%;}
+    .col-tb-4 {width: 33.33%;}
+    .col-tb-5 {width: 41.66%;}
+    .col-tb-6 {width: 50%;}
+    .col-tb-7 {width: 58.33%;}
+    .col-tb-8 {width: 66.66%;}
+    .col-tb-9 {width: 75%;}
+    .col-tb-10 {width: 83.33%;}
+    .col-tb-11 {width: 91.66%;}
+    .col-tb-12 {width: 100%;}
+
+    .body{
+        box-sizing: border-box;
+    }
+    .logo{
+        float: left;
+    }
+    .title{
+        float: left;
+    }
+    .nav{
+        float: left;
+    }
+    /* experiyens start from hear */
+    .description-area{
+        box-sizing: border-box;
+    }
+    .skill{
+        float: left;
+        box-sizing: border-box;
+    }
+    .skill-card{
+        height: 585px;
+    }
+    .work{
+        float: left;
+        box-sizing: border-box;
+    }
+    .study{
+        overflow:auto;
+        box-sizing: border-box;
+    }
+    .description-area::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .contact-me li{
+        font-size: 20px;
+    }
+
+    .about{
+        display: flex;
+    }
+   
+
+}
+

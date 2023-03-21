@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(26, 208, 148);
+    text-align: center;
+    padding: 10px;
+}
+ 
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 15px 10px 10px 10px;
+}
+.title h2{
+    font-size: 30px;
+    font-family: 'Gloock', serif;
+    letter-spacing: 1.5px;
+}
+.nav ul{
+    padding: 0;
+}
+.nav li{
+    list-style: none;
+    background-color: blue;
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
+    padding: 5px;
+    transition: 1s;
+}
+.nav li:hover{
+    background-color: gray;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* header area end */
+
+/* main area start */
+.description-area{
+    position: relative;
+}
+.weather-top{
+    width: 100%;
+    display: block;
+}
+.weather-top img{
+    width: 80px;
+    position: absolute;
+    top: -90px;
+    right: 50px;
+}
+.description{
+    margin-top: 100px;
+    text-align: center;
+}
+.description h3{
+    
+    font-family: 'Dancing Script', cursive;
+}
+.weather-buttom img{
+    width: 80px;
+    margin: 0 0 20px 50px;
+    
+}
+#weather{
+    transition: 2s;
+}
+#weather:hover{
+    transform: rotate(370deg);
+}
+.description-area::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* <!-- experiyens start --> */
+.skill{
+    padding: 8px;
+}
+.skill-card{
+    background-color: rgb(41, 85, 41);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+.skill-card:hover{
+    box-shadow: 0 5px 8px 10px gray;
+}
+.experiyens-img{
+    width: 50px;
+    margin: auto;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.skill-card h2{
+    background-color: rgb(103, 222, 182);
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+}
+.skill-card li{
+    list-style: none;
+    margin-top: 25px;
+    position: relative;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.skill-card li::before{
+    content: '';
+    width: 100%;
+    height: 13px;
+    background-color: rgb(140, 160, 196);
+    position: absolute;
+
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 50px;
+}
+.skill-card li::after{
+    content: '';
+    width: 0;
+    height: 13px;
+    background-color: rgb(20, 102, 255);
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 50px;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.skill-card .dm::after{
+    animation-name: dm;
+}
+@keyframes dm {
+    to{
+        width: 80%;
+    }
+}
+.skill-card .wd::after{
+    animation-name: wd;
+}
+@keyframes wd {
+    to{
+        width: 90%;
+    }
+}
+.skill-card .wd2::after{
+    animation-name: wd2;
+}
+@keyframes wd2 {
+    to{
+        width: 70%;
+    }
+}
+.skill-card .sy::after{
+    animation-name: sy;
+}
+@keyframes sy {
+    to{
+        width: 50%;
+    }
+}
+.skill-card .lg::after{
+    animation-name: lg;
+}
+@keyframes lg {
+    to{
+        width: 90%;
+    }
+}
+.skill-card .fm::after{
+    animation-name: fm;
+}
+@keyframes fm {
+    to{
+        width: 80%;
+    }
+}
+
+.work{
+    padding: 8px;
+}
+.work-card{
+    background-color: rgb(41, 85, 41);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+.work-card:hover{
+    box-shadow: 0 5px 8px 10px gray;
+}
+.work-card h2{
+    background-color: rgb(103, 222, 182);
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+}
+.work-card li{
+    list-style: none;
+}
+
+.study{
+    padding: 8px;
+}
+.study-card{
+    background-color: rgb(41, 85, 41);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+.study-card:hover{
+    box-shadow: 0 5px 8px 10px gray;
+}
+.study-card h2{
+    background-color: rgb(103, 222, 182);
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+}
+.study-card li{
+    list-style: none;
+}
+.experiyens-area::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* main area end */
+
+/* about strat from hear */
+.about-me{
+    background-color: rgb(63, 63, 240);
+    padding: 8px;
+}
+.about-me h2{
+    background-color:  rgb(103, 222, 182);
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.images{
+    width: 300px;
+    margin: auto;
+}
+.images img{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid #fff;
+
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.images img:hover{
+    box-shadow: 0px 0px 10px 5px rgb(103, 222, 182);
+    animation-name: img;
+}
+@keyframes img {
+    0%{
+        border-color: aqua;
+    }
+    25%{
+        border-color: 50% blue;
+    }
+    50%{
+        border-color: blueviolet;
+    }
+    75%{
+        border-color: darkgreen;
+    }
+    100%{
+        border-color: fuchsia;
+    }
+}
+
+.about h3{
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+.horijen-row{
+    height: 2px;
+    color: #fff;
+
+}
+button{
+    border-radius: 50%;
+    padding: 6px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+}
+.soshel{
+    margin: auto;
+    text-align: center;
+}
+
+/* contact me strart from hear */
+.contact-me{
+    background-color: rgb(26, 208, 148);
+    padding: 8px;
+}
+.contact-me h2{
+    background-color: rgb(71, 105, 107);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.contact-me li a{
+    text-decoration: none;
+}
+.contact-me li{
+    letter-spacing: 1px;
+    padding: 2px;
+}
+/* foorer are strat from hear */
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
